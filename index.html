@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Chat Buddies</title>
+
+  </head>
+
+  <body>
+    <div class="container">
+
+      <h1>Welcome to chat buddies</h1>
+
+      <form action="chat.html">
+
+        <div class="input-container">
+             <label for="username" class="lbl">username:</label>
+             <input type="text" name="username" id="username" class="inp" placeholder="Ex- Vishal" required/>
+        </div>
+
+        <div class="input-container">
+
+          <label for="username" class="lbl">Room:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label >
+           
+           <select name="room" class="inp" id="room">
+           <option value="EC" >EC</option>
+           <option value="IT">IT</option>
+           <option value="CS">CS</option>
+           <option value="CE">CE</option>
+           <option value="ME">ME</option>
+           <option value="EE">EE</option>
+
+    </select>
+         
+    <br/>
+
+        </div>
+
+        <div class="btn-div">
+          <button type="submit" class="join-btn">Join Room</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <style>
+      .container {
+        border: 1px solid black;
+        padding: 20px;
+        background-color: rgb(90, 190, 248);
+        max-width: 800px;
+        height: 400px;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 15px;
+      }
+
+      h1 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .input-container {
+        margin-top: 30px;
+        margin-left: 30px;
+      }
+
+      .inp{
+        margin-left: 30px;
+        width: 200px;
+        padding: 5px;
+        border-radius: 8px;
+        border: 1px solid black;
+      }
+   
+      
+      .btn-div{
+        margin-top: 50px;
+        width: fit-content;
+      }
+
+      .join-btn {
+        width: 100px;
+        height: 30px;
+        border: 1px dotted black;
+        border-radius: 5px;
+        transition: ease-out 0.3s;
+      }
+
+      .join-btn:hover {
+        box-shadow: inset 100px 0 0 0 rgb(68, 62, 62);
+        cursor: pointer;
+        color: white;
+      }
+  </style>
+
+  
+  </body>
+</html>
