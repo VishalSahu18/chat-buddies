@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js" integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/main.js"></script> 
+
+    <title>Chat Buddies</title>
+
+     
+</head>
+
+
+<body>
+
+    <div class="container">
+
+   
+        <header class="chat-header">
+            <h1>Chat Buddies</h1>
+            <a href="index.html" class="leave-btn">Leave Room</a>
+        </header>
+    
+        <div class="chat-container">
+
+            <div class="left-sidebar">
+                
+                <span class="current-room">Room Name:</span>   
+                <br>
+                <span id="room-name"></span>
+                
+                <br><br>
+                <span class="user-names">Users<span>
+
+                <ul id="users"> </ul>
+
+            </div>
+
+
+            <div class="right-sidebar chat-messages">
+
+                     <!-- <div class="message right">
+
+                        <span class="username">~Introvert</span>
+
+                        <p class="content">
+                            Hi Kittu how are you?
+                         <br>
+                         <span class="time">9:14 pm</span>
+
+                       </p>
+
+                     </div>
+                     
+                     <div class="message left">
+                         <span class="username">~kittu</span>
+
+                        <p class="content">
+                            I am fine introvert you say?
+                         <br>
+                         <span class="time">9:14 pm</span>
+                     </p>
+
+                     </div> -->
+                   
+            </div>
+
+
+
+    </div>
+
+    <form id="chat-form">
+         <input type="text" class="enter-msg" id="msg" placeholder="Enter Message" required autocomplete="off">
+         <button  class="send-btn">Send</button>
+   </form>
+         
+    </div>
+
+    <style>
+
+        
+
+        .container{
+              border: 1px solid black;
+              max-width: 1000px;
+              margin: auto;
+              border-radius: 10px;
+        }
+    
+        .chat-header{
+            border-radius: 10px 10px 0px 0px ;
+            display: flex;
+            border: 1px solid black;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(60, 180, 250);
+        }
+
+        .leave-btn{
+            text-decoration: none;
+            width: max-content;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+        }
+        
+        .chat-container{
+            display: flex;
+            height: 500px;
+        }
+
+        .left-sidebar{
+            border: 1px solid black;
+            padding: 10px;
+            width: 100px;
+            background-color: antiquewhite;
+            background-color: rgb(50,160, 250);
+        }
+
+        .right-sidebar{
+            border: 1px solid black;
+            width: 900px;
+            padding: 30px;
+            overflow-y: auto;
+            /* background-color: rgb(60, 180, 250); */
+
+         }
+
+        .message{
+            border: 1px solid black;
+            padding-bottom: 3px;
+            /* background-color: white; */
+            background-color: rgb(133, 133, 133);
+            color: black;
+            border-radius: 10px;
+            padding-top: 2px;
+            margin: 10px 0px;
+            width: fit-content;
+
+        }
+
+
+         .right{
+             float: right;
+             clear: both;
+         }
+
+         .left{
+             float: left;
+             clear: both;
+         }
+
+         .center{
+            width: 100%;
+            background-color: rgb(252, 174, 210);
+         }
+
+
+        .message p{
+             margin: 15px 5px;
+         }
+
+         .message span{
+             float: right;
+             margin-right: 5px;
+             font-size: 10px;
+          }
+        
+         #users :first-child{
+             margin-top: -15px;
+         }
+
+
+         .send-btn{
+             float: right;
+             border: 1px solid black;
+             padding: 5px;
+             border-radius: 5px;
+             cursor: pointer;
+             transition: ease-out 0.3s;
+         }
+
+         .send-btn:hover{
+            box-shadow: inset 100px 0 0 0 rgb(15, 145, 15);
+            cursor: pointer;
+            color: white;
+         }
+
+         .enter-msg{
+             height: 40px;
+             float: left;
+             width: 99%;
+             border: 1px solid black;
+             padding: 5px;
+             border-radius: 5px;
+         }
+
+     </style>
+
+</body>
+
+</html>
+
