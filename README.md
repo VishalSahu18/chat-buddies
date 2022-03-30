@@ -1,4 +1,4 @@
-# Real-time-chat-Application
+# Chat Buddies - A real time chat application
 This is the Real time chat application I made using HTML CSS for structuring Socket.io and  Node JS for real time communication. 
 
 
