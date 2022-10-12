@@ -10,8 +10,10 @@ This is the Real time chat application I made using HTML CSS for structuring Soc
 
 <h1>Chat Room</h1>
 
-![chat img1](https://user-images.githubusercontent.com/92618022/161007500-2b404f80-16e0-439d-b2df-349345188ad0.JPG)
+![visha_yash_chat](https://user-images.githubusercontent.com/92618022/195411670-db29cad2-a173-4991-bfbc-384b86d4bcda.JPG)
+
 
 <br><br>
 
-![chat img2](https://user-images.githubusercontent.com/92618022/161007555-f116ea3a-a036-4b27-8c7b-6c0e7da65d95.JPG)
+![yash_vishal](https://user-images.githubusercontent.com/92618022/195411680-f38d7260-3a05-4afd-9573-424469267bed.JPG)
+
